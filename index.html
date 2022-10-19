@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="menu">
+
+        <ul>
+            <li><a href="#" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#" onclick="toggleMenu();">About</a></li>
+            <li><a href="#" onclick="toggleMenu();">Training</a></li>
+            <li><a href="#" onclick="toggleMenu();">Team</a></li>
+            <li><a href="#" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+
+    </div>
+
+    <section class="banner">
+
+        <header>
+
+            <h2 logo class="logo">Your Logo</h2>
+            <div class="toggle" onclick="toggleMenu();"></div>
+
+        </header>
+        <video src="resources/videos/production ID_4753946.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Be Stronger</h2>
+            <h3>Never give up</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nulla porro modi maxime ut quas tempora dolores, omnis commodi voluptatibus perferendis </p>
+
+        <a href="#">Join Us</a>
+        </div>
+
+            <ul class="sci">
+
+                <li><a href="#"><img src="resources/icons/facebook.png" alt=""></a></li>
+                <li><a href="#"><img src="resources/icons/twitter.png" alt=""></a></li>
+                <li><a href="#"><img src="resources/icons/instagram.png" alt=""></a></li>
+
+            </ul>
+        
+    </section>
+
+    <script type="text/javascript">
+
+        function toggleMenu(){
+            var menuToglle = document.querySelector('.toggle');
+            var banner = document.querySelector('.banner');
+            menuToglle.classList.toggle('active');
+            banner.classList.toggle('active');
+        }
+
+    </script>
+
+
+</body>
+</html>
